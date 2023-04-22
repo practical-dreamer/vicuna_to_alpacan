@@ -1,0 +1,3 @@
+{
+    "id,conversation":"A chat between a curious user and an artificial intelligence assistant.\nThe assistant gives helpful, detailed, and polite answers to the user's questions.\n\n### CONVERSATION:\n%conversation%"
+}
