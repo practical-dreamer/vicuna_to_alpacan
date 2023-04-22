@@ -1,3 +1,4 @@
+## Description
 This conversion script is designed to convert vicuna datasets to a more alpaca-like format.
 To be used with the trainer found here: https://github.com/oobabooga/text-generation-webui/wiki/Using-LoRAs#training-a-lora
 This was designed to conform to SOME of the format from the conv_vicuna_v1_1 format from the FastChat Github repo (https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py) while working within the format of Ooba's Trainer. Some liberties were taken on this format adaptation...
