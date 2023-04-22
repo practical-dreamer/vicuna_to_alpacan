@@ -11,8 +11,8 @@ Some of the conversations in the SparseGPT dataset are pretty long. This reason 
 *MAY BE ABLE TO USE CUTOFF LENGTH PARAMETER IN OOBA'S TRAINER*
 
 ## How to use Script
-1. Convert vicuna json to alpaca format with "python vicuna_to_alpaca_format.py --input <path_to_vicuna_dataset>"
-2. Copy the datasets folder to "text-generation-webui/training/datasets"
-3. Copy the formats folder to "text-generation-webui/training/formats"
+1. Convert vicuna json to alpaca format with `python vicuna_to_alpaca_format.py --input <path_to_vicuna_dataset>`
+2. Copy the datasets folder to `text-generation-webui/training/datasets`
+3. Copy the formats folder to `text-generation-webui/training/formats`
 
 Still Totally Untested WIP
