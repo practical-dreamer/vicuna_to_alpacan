@@ -5,14 +5,14 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 
 ## Note about versions
 3 Different versions. Not sure which is best.
-* Version A - My original Script - least like Vicuna
-* Version B - Somewhere in the middle - Adds `<s>` and `<\s>` but keeps New Lines (`\n`) between Responses
-* Version C - As Close to Vicuna 1.1 format as I can - Adds `<s>` and `<\s>` with only a space (` `) between Responses
+* Version A - My original Script 
+* Version B - Most Closely Matches Ooba's Vicuna 1.1 format here: https://github.com/oobabooga/text-generation-webui/blob/main/characters/instruction-following/Vicuna-v1.yaml
+* Version C - Most Closely Matches Fastchat's Vicuna 1.1 format here: https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py
 
 **Make sure whatever version you pick matches the vicuna-format JSON**
 
 ## How to use Script
-1. Convert vicuna json to alpaca format with `python vicuna_to_alpacan_format_A.py --input <path_to_vicuna_dataset>`
+1. Convert vicuna json to alpaca format with `python format_A.py --input <path_to_vicuna_dataset>`
 2. Copy the datasets folder to `text-generation-webui/training/datasets`
 3. Copy the formats folder to `text-generation-webui/training/formats`
 
