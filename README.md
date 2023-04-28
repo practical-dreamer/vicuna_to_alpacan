@@ -5,12 +5,9 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 
 ## Note about versions
 3 Different versions. Not sure which is best.
-#Version A - Least like Official Vicuna. (My original Script)
-      No `<s>` or `<\s>` + New Lines (`\n`) between Responses
-#Version B - Somewhere in the middle.
-      Adds `<s>` and `<\s>` + New Lines (`\n`) between Responses
-#Version C - As Close to Vicuna 1.1 format as I understand. 
-      Adds `<s>` and `<\s>` + Only a space (` `) between Responses
+* Version A - Least like Official Vicuna. No `<s>` or `<\s>` + New Lines (`\n`) between Responses
+* Version B - Somewhere in the middle. Adds `<s>` and `<\s>` + New Lines (`\n`) between Responses
+* Version C - As Close to Vicuna 1.1 format as I can. Adds `<s>` and `<\s>` + Only a space (` `) between Responses
 
 **Make sure whatever version you pick matches the vicuna-format JSON**
 
