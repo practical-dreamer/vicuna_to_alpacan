@@ -6,7 +6,7 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 ## Note about versions
 3 Different versions. Not sure which is best.
 * Version A - My original Script 
-* Version B - Most Closely Matches Ooba's Vicuna 1.1 format here: https://github.com/oobabooga/text-generation-webui/blob/main/characters/instruction-following/Vicuna-v1.yaml
+* Version B - Most Closely Matches Ooba's Vicuna format here: https://github.com/oobabooga/text-generation-webui/blob/main/characters/instruction-following/Vicuna-v1.yaml
 * Version C - Most Closely Matches Fastchat's Vicuna 1.1 format here: https://github.com/lm-sys/FastChat/blob/main/fastchat/conversation.py
 
 **Make sure whatever version you pick matches the vicuna-format JSON**
