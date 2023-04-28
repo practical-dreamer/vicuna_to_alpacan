@@ -22,7 +22,7 @@ def filter_conversations(new_data):
     filtered_data = []
 
     for item in new_data:
-        if '<s>' not in item['conversation'] and '</s>' not in item['conversation']:
+        if '<s>' not in item['conversation'] and '<\\s>' not in item['conversation']:
             filtered_data.append(item)
 
     return filtered_data
