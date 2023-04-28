@@ -16,4 +16,4 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 2. Copy the datasets folder to `text-generation-webui/training/datasets`
 3. Copy the formats folder to `text-generation-webui/training/formats`
 
-Still Totally Untested WIP
+Still ~~Totally~~ Mostly Untested WIP
