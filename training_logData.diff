@@ -1,12 +1,13 @@
---- original.py	2023-04-29 22:55:39.914537093 -0500
-+++ modified.py	2023-04-29 22:41:18.716386000 -0500
-@@ -411,8 +411,33 @@
+--- original.py	2023-04-30 06:43:11.885991000 -0500
++++ modified.py	2023-04-30 06:49:19.268971428 -0500
+@@ -411,8 +411,38 @@
      if WANT_INTERRUPT:
          yield "Interrupted before start."
          return
-+        
++    
 +    def log_train_dataset(trainer):
 +        from datetime import datetime
++        import os
 +
 +        # Get current date and time
 +        now = datetime.now()
@@ -15,10 +16,14 @@
 +        # Create a log filename with the current date and time
 +        log_filename = f"train_dataset_log_{date_time}.txt"
 +
++        # Ensure the logs directory exists
++        if not os.path.exists('logs'):
++            os.makedirs('logs')
++
 +        # Create or open a log file in the logs directory
-+        with open(f'logs/{log_filename}', 'a') as log_file:
-+            # Iterate over the entire dataset
-+            for i in range(len(trainer.train_dataset)):
++        with open(os.path.join('logs', log_filename), 'a') as log_file:
++            # Iterate over the first 10 elements in the dataset
++            for i in range(min(10, len(trainer.train_dataset))):
 +                # Decode the 'input_ids' from each element in the dataset
 +                decoded_text = shared.tokenizer.decode(trainer.train_dataset[i]['input_ids'])
 +                # Append the decoded text to the log file
