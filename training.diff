@@ -20,7 +20,7 @@
 +            # Iterate over the entire dataset
 +            for i in range(len(trainer.train_dataset)):
 +                # Decode the 'input_ids' from each element in the dataset
-+                decoded_text = shared.tokenizer.decode(trainer.train_dataset[i]['input_ids'])
++                decoded_text = shared.tokenizer.decode(trainer.train_dataset[i]['input_ids'],skip_special_tokens=False)
 +                # Append the decoded text to the log file
 +                log_file.write(decoded_text)
 +                # Add separator line
