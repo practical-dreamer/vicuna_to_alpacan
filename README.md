@@ -17,3 +17,8 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 3. Copy the formats folder to `text-generation-webui/training/formats`
 
 Still ~~Totally~~ Mostly Untested WIP
+
+## Enabling Training Logs For Data Inspection
+1. Copy the training.diff file to "text-generation-webui/modules/"
+2. Run command `patch training.py training.diff`
+3. Logs now sent to "text-generation-webui/logs/"
