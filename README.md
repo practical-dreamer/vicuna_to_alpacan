@@ -12,7 +12,7 @@ This was designed to conform to SOME of the format from the conv_vicuna_v1_1 for
 **Make sure whatever version you pick matches the vicuna-format JSON**
 
 ## How to use Script
-1. Convert vicuna json to alpaca format with `python format_A.py --input <path_to_vicuna_dataset>`
+1. Convert vicuna json to alpaca format with `python format_B.py --input <path_to_vicuna_dataset>`
 2. Copy the datasets folder to `text-generation-webui/training/datasets`
 3. Copy the formats folder to `text-generation-webui/training/formats`
 
