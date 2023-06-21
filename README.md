@@ -22,8 +22,3 @@ Still ~~Totally~~ Mostly Untested WIP
 1. Copy the training_logData.diff file to "text-generation-webui/modules/"
 2. Run command `patch training.py training_logData.diff`
 3. Logs now sent to "text-generation-webui/logs/"
-
-## Patch Training Token Pad
-1. Copy the training_padHotFix.diff file to "text-generation-webui/modules/"
-2. Run command `patch training.py training_padHotFix.diff`
-3. Logs now sent to "text-generation-webui/logs/"
